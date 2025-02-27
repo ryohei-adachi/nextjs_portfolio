@@ -1,0 +1,76 @@
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+html {
+  font-size: 100%; /* 16px */
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #24292e;
+  font-family: "Sawarabi Gothic", Helvetica, Arial, sans-serif;
+  background-color: #fff; /* 全体背景の色 */
+}
+
+a {
+  text-decoration: none; /* 下線を消すことができる */
+}
+
+p {
+  font-size: 1.3rem; /* デフォルトフォントサイズに対しての倍率 */
+}
+
+img {
+  max-width: 100%; /* スマホサイズになってもちゃんと縮小される */  
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+span {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
