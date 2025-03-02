@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -7,13 +8,13 @@ export default function Home() {
         <header className={styles.header}>
             <div className={styles.headerContener}>
                 <h1 className={styles.siteTitle}>
-                <a href="#"> Y U R I K A  <span>H O S H I</span></a>
+                <Link href="#"> Y U R I K A  <span>H O S H I</span></Link>
                 </h1>
             </div>
         </header>
         <div id="main" className={styles.main}>
             <picture>
-                <source media="(max-width: 600px)" srcset="/img-sp.jpg" />
+                <source media="(max-width: 600px)" srcSet="/img-sp.jpg" />
                 <img src="/himawari2.jpg" alt="" />
             </picture>
         </div>
@@ -21,7 +22,12 @@ export default function Home() {
             <h2 className={styles.secTitle}>About</h2>
 
             <div className={styles.gridCenter}>
-                <img src="/yurika.jpg" alt="" />
+                <Image 
+                    src="/yurika.jpg" 
+                    alt="" 
+                    width={220}
+                    height={220}
+                />
             </div>
 
             <div className={styles.aboutContent}>
@@ -48,12 +54,53 @@ export default function Home() {
         <section id="works" className={`${styles.wrapper} ${styles.works}`}>
             <h2 className={styles.secTitle}>Works</h2>
             <ul>
-                <li><img src="/works1.jpg" alt="works1" /></li>
-                <li><img src="/works2.jpg" alt="works2" /></li>
-                <li><img src="/works3.jpg" alt="works3" /></li>
-                <li><img src="/works4.jpg" alt="works4" /></li>
-                <li><img src="/works5.jpg" alt="works5" /></li>
-                <li><img src="/works6.jpg" alt="works6" /></li>
+                <li><Image 
+                        src="/works1.jpg" 
+                        alt="works1" 
+                        width={300}
+                        height={200}
+                    />
+                </li>
+                <li>
+                    <Image 
+                        src="/works2.jpg" 
+                        alt="works2" 
+                        width={300}
+                        height={200}
+                    />
+                </li>
+                <li>
+                    <Image 
+                        src="/works3.jpg" 
+                        alt="works3" 
+                        width={300}
+                        height={200}
+                    />
+                </li>
+                <li>
+                    <Image 
+                        src="/works4.jpg" 
+                        alt="works4" 
+                        width={300}
+                        height={200}
+                    />
+                </li>
+                <li>
+                    <Image 
+                        src="/works5.jpg" 
+                        alt="works5" 
+                        width={300}
+                        height={200}
+                    />
+                </li>
+                <li>
+                    <Image 
+                        src="/works6.jpg" 
+                        alt="works6" 
+                        width={300}
+                        height={200}
+                    />
+                </li>
             </ul>
         </section>
         <section id="news" className={`${styles.wrapper} ${styles.news}`}>
@@ -77,11 +124,11 @@ export default function Home() {
             <form action="#" method="post">
                 <div className={styles.contactContent}>
                     <dl>
-                        <dt><label for="name">名前</label></dt>
+                        <dt><label htmlFor="name">名前</label></dt>
                         <dd><input type="text" id="name" /></dd>
-                        <dt><label for="email">メールアドレス</label></dt>
+                        <dt><label htmlFor="email">メールアドレス</label></dt>
                         <dd><input type="email" id="email" /></dd>
-                        <dt><label for="content">内容</label></dt>
+                        <dt><label htmlFor="content">内容</label></dt>
                         <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
                     </dl>
                 </div>
