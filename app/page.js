@@ -1,17 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import Header from "@/app/_components/Header";
+import Footer from "@/app/_components/Footer";
 
 export default function Home() {
   return (
     <>
-        <header className={styles.header}>
-            <div className={styles.headerContener}>
-                <h1 className={styles.siteTitle}>
-                <Link href="#"> Y U R I K A  <span>H O S H I</span></Link>
-                </h1>
-            </div>
-        </header>
+        <Header />
         <div id="main" className={styles.main}>
             <picture>
                 <source media="(max-width: 600px)" srcSet="/img-sp.jpg" />
@@ -135,10 +131,7 @@ export default function Home() {
                 <div className={styles.button}><input type="submit" value="送信"/></div>
             </form>
         </section>
-
-        <footer id="footer" className={styles.footer}>
-            <p>Copyright (C) All Rights Reserved.</p>
-        </footer>
+        <Footer />
     </>
 
   );
