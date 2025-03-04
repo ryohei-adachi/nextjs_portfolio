@@ -35,19 +35,6 @@
   margin-bottom: 65px;
 }
 
-
-/* main */
-
-.main {
-  margin-bottom: 80px;
-}
-.main img {
-  width: 100%;
-  max-width: 1920px;
-  height: 600px;
-  object-fit: cover; /* 画像が潰れないようにカバーできる */
-}
-
 /* about */
 .div {
   text-align: center;

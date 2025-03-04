@@ -1,0 +1,12 @@
+/* main */
+
+.container {
+    margin-bottom: 80px;
+  }
+
+  .bgimg {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover; /* 画像が潰れないようにカバーできる */
+  }

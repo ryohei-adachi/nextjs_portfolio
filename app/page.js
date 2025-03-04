@@ -3,17 +3,13 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Header from "@/app/_components/Header";
 import Footer from "@/app/_components/Footer";
+import Hero from "@/app/_components/Hero";
 
 export default function Home() {
   return (
     <>
         <Header />
-        <div id="main" className={styles.main}>
-            <picture>
-                <source media="(max-width: 600px)" srcSet="/img-sp.jpg" />
-                <img src="/himawari2.jpg" alt="" />
-            </picture>
-        </div>
+        <Hero />
         <section id="about" className={`${styles.wrapper} ${styles.about}`}>
             <h2 className={styles.secTitle}>About</h2>
 
