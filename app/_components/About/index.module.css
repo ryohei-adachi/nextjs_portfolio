@@ -1,0 +1,52 @@
+/* about */
+
+.secTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0.4%;
+}
+  
+.about img {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+  
+  
+.about ul {
+    margin-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 320px;
+}
+  
+.about ul li {
+    margin-bottom: 3px;
+    text-align: left;
+}
+  
+.aboutContent {
+    margin-bottom: 3px;
+    text-align: center;
+    color: #575757;
+}
+  
+.aboutItem {
+    padding: .4rem 0;
+}
+  
+.aboutContent p {
+    font-size: 1rem;
+    margin-bottom: .1rem;
+}
+  
+.aboutTitle {
+    color: rgb(247, 124, 63);
+}
