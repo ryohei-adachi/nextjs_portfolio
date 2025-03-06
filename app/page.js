@@ -4,6 +4,7 @@ import Header from "@/app/_components/Header";
 import Footer from "@/app/_components/Footer";
 import Hero from "@/app/_components/Hero";
 import About from "@/app/_components/About";
+import WorkList from "@/app/_components/WorkList";
 
 export default function Home() {
   return (
@@ -11,59 +12,8 @@ export default function Home() {
         <Header />
         <Hero />
         <About />
+        <WorkList />
 
-        <section id="works" className={`${styles.wrapper} ${styles.works}`}>
-            <h2 className={styles.secTitle}>Works</h2>
-            <ul>
-                <li><Image 
-                        src="/works1.jpg" 
-                        alt="works1" 
-                        width={300}
-                        height={200}
-                    />
-                </li>
-                <li>
-                    <Image 
-                        src="/works2.jpg" 
-                        alt="works2" 
-                        width={300}
-                        height={200}
-                    />
-                </li>
-                <li>
-                    <Image 
-                        src="/works3.jpg" 
-                        alt="works3" 
-                        width={300}
-                        height={200}
-                    />
-                </li>
-                <li>
-                    <Image 
-                        src="/works4.jpg" 
-                        alt="works4" 
-                        width={300}
-                        height={200}
-                    />
-                </li>
-                <li>
-                    <Image 
-                        src="/works5.jpg" 
-                        alt="works5" 
-                        width={300}
-                        height={200}
-                    />
-                </li>
-                <li>
-                    <Image 
-                        src="/works6.jpg" 
-                        alt="works6" 
-                        width={300}
-                        height={200}
-                    />
-                </li>
-            </ul>
-        </section>
         <section id="news" className={`${styles.wrapper} ${styles.news}`}>
             <h2 className={styles.secTitle}>News</h2>
             <dl>
