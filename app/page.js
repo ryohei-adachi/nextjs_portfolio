@@ -5,6 +5,7 @@ import Footer from "@/app/_components/Footer";
 import Hero from "@/app/_components/Hero";
 import About from "@/app/_components/About";
 import WorkList from "@/app/_components/WorkList";
+import NewsList from "@/app/_components/NewsList";
 
 export default function Home() {
   return (
@@ -13,22 +14,8 @@ export default function Home() {
         <Hero />
         <About />
         <WorkList />
+        <NewsList />
 
-        <section id="news" className={`${styles.wrapper} ${styles.news}`}>
-            <h2 className={styles.secTitle}>News</h2>
-            <dl>
-                <dt>2023/11/01</dt>
-                <dd>プログラミングの勉強始めました</dd>
-                <dt>2023/12/05</dt>
-                <dd>html/CSSの勉強始めました</dd>
-                <dt>2023/12/05</dt>
-                <dd>本サイトをリリースしました</dd>
-                <dt>2023/12/25</dt>
-                <dd>本サイトを一部修正しました</dd>
-                <dt>2025/01/05</dt>
-                <dd>プロフィール画像を追加しました。</dd>
-            </dl>
-        </section>
         <section id="contact" className={`${styles.wrapper} ${styles.contact}`}>
             <h2 className={styles.secTitle}>Contact</h2>
             <p>お問合せは以下のフォームからお願いします！</p>
