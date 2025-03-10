@@ -1,0 +1,96 @@
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0.4%;
+}
+  
+.secTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* Contact */
+
+.contact-content {
+    display: flex;
+    align-items: center;
+}
+  
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #635c5c;
+    font-size: medium;
+}
+  
+.contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1.5rem auto 3rem;
+    width: 75%;
+}
+  
+.contact dt {
+    width: 100%;
+    margin-bottom: .3rem;       
+ }
+  
+.contact dt label {
+    color: #575757;
+}
+  
+.contact dd {
+    width: 100%;
+    margin-bottom: 1.1rem;  
+}
+  
+.contact dd input,
+.contact dd textarea {
+    width: 100%;
+    border: 1px solid #8f8f8f;
+    padding: 10px;
+    
+}
+  
+.contact dd textarea {
+    height: 10rem;
+}
+  
+.contact .button {
+    text-align: center;   
+}
+  
+.contact .button input {
+    border: 1px solid #808080;
+    background-color: #808080;
+    width: 200px;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.5s;
+}
+  
+.contact .button input:hover {
+    background-color: #fff;
+    color: #808080;
+    cursor: pointer;
+}
+
+/* sp */
+@media screen and (max-width: 600px) {
+    .contact dl {
+        flex-direction: column;
+    }
+  
+    .contact dt {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+  
+    .contact dd {
+        width: 100%;
+  
+    }
+}
