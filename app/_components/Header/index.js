@@ -1,5 +1,6 @@
 import styles from "./index.module.css"
 import Link from "next/link"
+import Menu from "@/app/_components/Menu";
 
 export default function Header() {
     return (
@@ -9,6 +10,7 @@ export default function Header() {
                      <Link href="#"> Y U R I K A  <span>H O S H I</span></Link>
                 </h1>
             </div>
+            <Menu/>
         </header>
     )
 }

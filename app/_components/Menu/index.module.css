@@ -1,0 +1,64 @@
+/*開閉ボタン*/
+.btnMenu {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 3;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btnMenu svg {
+    margin-top: .25rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+/*閉じるボタン*/
+.closeMenu {
+    border: 1px solid aliceblue;
+}
+
+.closeMenu svg {
+    fill:aliceblue;
+}
+
+/*スライドメニューパネル*/
+.menuPanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    padding: 8rem 2rem 2rem;
+    width: max(32vw, 20rem);
+    height: 100vh;
+    background-color: rgb(223, 148, 90);
+    box-shadow: 0 0 2rem black;
+    /*ハンバガーメニューを押していない状態の場合、画面の外側に配置して見えないようにする*/
+    translate: 100vw;
+}
+
+.menuList {
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+}
+
+.menuList li {
+    margin: 1.5rem 0;
+}
+
+.menuList a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.st0 {
+    fill: #4B4B4B;
+}
