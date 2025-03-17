@@ -1,12 +1,20 @@
-import Link from "next/link";
+"use client"
+
+import cx from "classnames";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import styles from "./index.module.css";
 
-
 export default function Menu() {
+
+    const [isOpen, setOpen] = useState(false);
+    const open = () => setOpen(true);
+    const close = () => setOpen(false);
+
     return (
         <nav>
-            <button id="js-open-menu" className={`${styles.btnMenu} ${styles.openMenu}`} title="メニューを開きます">
+            <button className={styles.btnMenu} title="メニューを開きます" onClick={open}>
                 <Image
                     src="/bars.png" 
                     alt="" 
@@ -14,10 +22,10 @@ export default function Menu() {
                     height={32}
                 />
             </button>
-            <div id="menu-panel" className={styles.menuPanel}>
-                <button id="js-close-menu" className={`${styles.btnMenu} ${styles.closeMenu}`} title="メニューを閉じます">
+            <div className={cx(styles.menuPanel, {[styles.open]:isOpen})}>
+                <button className={`${styles.btnMenu} ${styles.closeMenu}`} title="メニューを閉じます" onClick={close}>
                     <Image
-                        src="/close"
+                        src="/close.png"
                         alt=""
                         width={32}
                         height={32}
@@ -29,11 +37,16 @@ export default function Menu() {
                     <li className={styles.menuList}><Link href="#news">News</Link></li>
                     <li className={styles.menuList}><Link href="#contact">Contact</Link></li>
                     <li>
-                       <Link
+                        <Link
                             href="https://www.Instagram.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            ><img src="./img/insta.png" alt="Instagram" className={styles.icon}
+                            ><Image 
+                                src="/insta.png" 
+                                alt="Instagram" 
+                                width={30}
+                                height={30}
+                                className={styles.icon}
                         /></Link>                
                     </li>
                 </ul>
