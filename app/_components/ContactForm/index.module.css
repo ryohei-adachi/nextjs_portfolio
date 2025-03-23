@@ -13,8 +13,7 @@
 
 /* Contact */
 
-.contact-content {
-    display: flex;
+.contactContent {
     align-items: center;
 }
   
@@ -61,7 +60,7 @@
   
 .contact .button {
     text-align: center;   
-}
+}   
   
 .contact .button input {
     border: 1px solid #808080;
@@ -76,6 +75,18 @@
     background-color: #fff;
     color: #808080;
     cursor: pointer;
+}
+
+.contact .error {
+    color: #f33;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+.contact .success {
+    color: #8ac75a;
+    font-size: .9rem;
+    margin-bottom: .5rem;
 }
 
 /* sp */
