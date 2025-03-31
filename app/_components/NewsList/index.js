@@ -1,41 +1,16 @@
 import styles from "./index.module.css";
+import { getAllNewsList } from "@/app/_libs/microcms";
+import { formatDate } from "@/app/_libs/utils";
 
-const news = [
-    {
-        id: 1,
-        date: "2023/11/01",
-        title: "プログラミングの勉強始めました"
-    },
-    {
-        id: 2,
-        date: "2023/12/05",
-        title: "html/CSSの勉強始めました"
-    },
-    {
-        id: 3,
-        date: "2023/12/05",
-        title: "本サイトをリリースしました"
-    },
-    {
-        id: 4,
-        date: "2023/12/25",
-        title: "本サイトを一部修正しました"
-    },
-    {
-        id: 5,
-        date: "2025/01/05",
-        title: "プロフィール画像を追加しました"
-    }
-];
-
-export default function NewsList() {
+export default async function NewsList() {
+    const news = await getAllNewsList();
     return (
         <section id="news" className={`${styles.wrapper} ${styles.news}`}>
             <h2 className={styles.secTitle}>News</h2>
             <dl>
             {news.map((article)=>(
                 <div key={article.id} className={styles.articleItem}>
-                    <dt>{article.date}</dt>
+                    <dt>{formatDate(article.date)}</dt>
                     <dd>{article.title}</dd>
                 </div>
             ))}
