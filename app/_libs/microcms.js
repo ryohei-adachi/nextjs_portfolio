@@ -16,10 +16,12 @@ const client = createClient({
 });
 
 
-//全ニュースをCMSから取得する関数
-export const getAllNewsList = async () => {
-    const listData = await client.getAllContents({
+//ニュースをCMSから取得する関数
+export const getNewsList = async (nwesLimit) => {
+
+    const listData = await client.getList({
         endpoint: "news",
+        queries: {limit: nwesLimit},
     });
     return listData;
 }
